@@ -1,0 +1,97 @@
+/* styles.css */
+
+/* Estilos básicos para la página */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Descripción de las páginas */
+.container p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilo para los botones de navegación */
+.button-container {
+    margin-top: 30px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el mouse */
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Animación de rebote para los botones */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Rebote hacia arriba */
+    }
+}
+
+/* Aplicar animación de rebote a los botones */
+.animated-button {
+    animation: bounce 1s infinite;
+    /* Efecto de rebote */
+}
+
+/* Galería de imágenes y sus efectos */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    /* Efecto de zoom */
+}
+
+.rotate:hover {
+    transform: rotate(10deg);
+    /* Efecto de rotación */
+}
+
+.flip:hover {
+    transform: rotateY(180deg);
+    /* Efecto de voltear */
+}
+
+.fade:hover {
+    opacity: 0.7;
+    /* Efecto de desvanecer */
+}
+
+.scale:hover {
+    transform: scale(1.2);
+    /* Efecto de aumento de tamaño */
+}

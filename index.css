@@ -1,0 +1,51 @@
+/* Estilos básicos para la página */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Descripción de las páginas */
+.container p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilo para los botones de navegación */
+.button-container {
+    margin-top: 30px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Animación de rebote para los botones */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animated-button {
+    animation: bounce 1s infinite;
+}
